@@ -82,6 +82,7 @@ Source listing [HELLO.LST]: [Enter]
 Cross-reference [HELLO.CRF]: [Enter]
 ```
 সব জায়গায় শুধু Enter চাপুন
+
 step4: 
 এখন link করতে হবে 
 ```
@@ -95,6 +96,7 @@ Map filename [HELLO.MAP]: [Enter]
 Library file: [Enter]
 ```
 সব জায়গায় শুধু Enter চাপুন
+
 step6: রান করুন 
 ```
 hi     (শুধু ফাইলের নাম)
