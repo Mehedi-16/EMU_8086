@@ -63,15 +63,43 @@ main:
     int 21h
 end main
 ```
+File > Save → File > Exit
 
 #### ⚙️ কম্পাইল ও রান করুন:
-```
-masm hello.asm
-link hello.obj
-hello.exe
-```
 
+step1: 
+```mount c ~/DOSBox/8086
+c:
+```
+step2:
+```
+masm hi.asm    (এখনে hi ফাইল name)
+```
+step3:
+```
+Object filename [HELLO.OBJ]: [Enter]
+Source listing [HELLO.LST]: [Enter]
+Cross-reference [HELLO.CRF]: [Enter]
+```
+সব জায়গায় শুধু Enter চাপুন
+step4: 
+এখন link করতে হবে 
+```
+link hi.obj  (এখনে hi ফাইল name)
+```
 ---
+step5:
+```
+EXE filename [HELLO.EXE]: [Enter]
+Map filename [HELLO.MAP]: [Enter]
+Library file: [Enter]
+```
+সব জায়গায় শুধু Enter চাপুন
+step6: রান করুন 
+```
+hi     (শুধু ফাইলের নাম)
+```
+Enter চাপ দিলেই,output দেখতে পারবেন...
 
 
 ## Contact Me
