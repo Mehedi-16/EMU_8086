@@ -68,7 +68,8 @@ File > Save → File > Exit
 #### ⚙️ কম্পাইল ও রান করুন:
 
 step1: 
-```mount c ~/DOSBox/8086
+```
+mount c ~/DOSBox/8086
 c:
 ```
 step2:
