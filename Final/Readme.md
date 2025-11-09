@@ -1,3 +1,37 @@
+
+<img width="398" height="110" alt="Screenshot 2025-11-10 at 5 45 32 AM" src="https://github.com/user-attachments/assets/94fa0a37-8187-44ca-a6b9-f85ad9fe5ea8" />
+
+
+```
+MOV AX, 0Eh
+MOV BX, 0EH
+
+MUL BX            ; AX = X^2
+MOV [2008], AX
+
+MOV BX, 3
+MUL BX            ; AX = 3X^2
+MOV [2002], AX
+
+MOV AX, 0Eh
+MOV BX, 2
+MUL BX
+MOV BX, AX
+ADD BX, [2002]
+SUB BX, 5         ; BX = 3X^2+2X-5
+
+MOV AX, [2008]
+MOV DX, 2
+MUL DX            ; AX = 2X^2
+SUB AX, 1
+MOV DX, AX        ; DX = 2X^2-1
+MOV AX, BX        ; AX = 3X^2+2X-5
+
+MOV BX, DX
+XOR DX, DX
+DIV BX
+```
+
 Write a program to exchange the value of AX and BX.
 
 ```
